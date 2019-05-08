@@ -135,6 +135,21 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="bin\Debug\commobj.fne" />
+    <None Include="bin\Debug\eAPI.fne" />
+    <None Include="bin\Debug\krnln.fnr" />
+    <None Include="bin\Debug\logs\2019-05-05.log" />
+    <None Include="bin\Debug\logs\2019-05-06.log" />
+    <None Include="bin\Debug\logs\2019-05-08.log" />
+    <None Include="bin\Debug\logs\error\2019-05-05.log" />
+    <None Include="bin\Debug\logs\error\2019-05-06.log" />
+    <None Include="bin\Debug\logs\error\2019-05-08.log" />
+    <None Include="bin\Debug\logs\session-2019-05-05.log" />
+    <None Include="bin\Debug\logs\session-2019-05-06.log" />
+    <None Include="bin\Debug\logs\session-2019-05-08.log" />
+    <None Include="bin\Debug\spec.fne" />
+    <None Include="bin\Debug\WebApi.dll.config" />
+    <None Include="bin\Debug\WechatServer.exe.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +163,46 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\api.dll" />
+    <Content Include="bin\Debug\e.dll" />
+    <Content Include="bin\Debug\ffmpeg\ffmpeg.exe" />
+    <Content Include="bin\Debug\ffmpeg\silk_v3_decoder.exe" />
+    <Content Include="bin\Debug\ffmpeg\silk_v3_encoder.exe" />
+    <Content Include="bin\Debug\FiddlerCore4.dll" />
+    <Content Include="bin\Debug\Fleck.dll" />
+    <Content Include="bin\Debug\Microsoft.Owin.dll" />
+    <Content Include="bin\Debug\Microsoft.Owin.Host.HttpListener.dll" />
+    <Content Include="bin\Debug\Microsoft.Owin.Host.HttpListener.xml" />
+    <Content Include="bin\Debug\Microsoft.Owin.Hosting.dll" />
+    <Content Include="bin\Debug\Microsoft.Owin.Hosting.xml" />
+    <Content Include="bin\Debug\Microsoft.Owin.xml" />
+    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.xml" />
+    <Content Include="bin\Debug\NLog.dll" />
+    <Content Include="bin\Debug\NLog.xml" />
+    <Content Include="bin\Debug\Owin.dll" />
+    <Content Include="bin\Debug\Swashbuckle.Core.dll" />
+    <Content Include="bin\Debug\System.Net.Http.dll" />
+    <Content Include="bin\Debug\System.Net.Http.Formatting.dll" />
+    <Content Include="bin\Debug\System.Net.Http.Formatting.xml" />
+    <Content Include="bin\Debug\System.Web.Cors.dll" />
+    <Content Include="bin\Debug\System.Web.Http.Cors.dll" />
+    <Content Include="bin\Debug\System.Web.Http.Cors.xml" />
+    <Content Include="bin\Debug\System.Web.Http.dll" />
+    <Content Include="bin\Debug\System.Web.Http.Owin.dll" />
+    <Content Include="bin\Debug\System.Web.Http.Owin.xml" />
+    <Content Include="bin\Debug\System.Web.Http.xml" />
+    <Content Include="bin\Debug\Telerik.NetworkConnections.dll" />
+    <Content Include="bin\Debug\WebApi.dll" />
+    <Content Include="bin\Debug\WebApi.xml" />
+    <Content Include="bin\Debug\WeChat.Core.dll" />
+    <Content Include="bin\Debug\WeChatRun64.dll" />
+    <Content Include="bin\Debug\WeChatRuntm.dll" />
+    <Content Include="bin\Debug\WechatServer.exe" />
+    <Content Include="bin\Debug\WechatServer.pdb" />
+    <Content Include="bin\Debug\weixin.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
