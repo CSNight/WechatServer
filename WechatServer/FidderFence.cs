@@ -42,6 +42,14 @@ namespace WechatServer
                 Monitor.Exit(oAllSessions);
                 oSession.fullUrl = oSession.fullUrl.Replace("http://www.wechattools.com/Api/Auth.ashx", LocalServer);
             }
+            if (oSession.fullUrl.Contains("http://www.wechattools.com/api/IpPort.ashx"))
+            {
+                oSession.bBufferResponse = true;
+                Monitor.Enter(oAllSessions);
+                oAllSessions.Add(oSession);
+                Monitor.Exit(oAllSessions);
+                oSession.fullUrl = oSession.fullUrl.Replace("http://www.wechattools.com/api/IpPort.ashx", LocalServer);
+            }
         }
     }
 }

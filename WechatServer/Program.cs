@@ -41,7 +41,7 @@ namespace WechatServer
                 fidderFence.StartFidderFence();
                 serverStarter.StartUpApi();
             }
-            catch
+            catch(Exception ex)
             {
                 ProxySettings.UnsetProxy();
                 FiddlerApplication.Shutdown();
