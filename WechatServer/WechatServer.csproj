@@ -138,15 +138,6 @@
     <None Include="bin\Debug\commobj.fne" />
     <None Include="bin\Debug\eAPI.fne" />
     <None Include="bin\Debug\krnln.fnr" />
-    <None Include="bin\Debug\logs\2019-05-05.log" />
-    <None Include="bin\Debug\logs\2019-05-06.log" />
-    <None Include="bin\Debug\logs\2019-05-08.log" />
-    <None Include="bin\Debug\logs\error\2019-05-05.log" />
-    <None Include="bin\Debug\logs\error\2019-05-06.log" />
-    <None Include="bin\Debug\logs\error\2019-05-08.log" />
-    <None Include="bin\Debug\logs\session-2019-05-05.log" />
-    <None Include="bin\Debug\logs\session-2019-05-06.log" />
-    <None Include="bin\Debug\logs\session-2019-05-08.log" />
     <None Include="bin\Debug\spec.fne" />
     <None Include="bin\Debug\WebApi.dll.config" />
     <None Include="bin\Debug\WechatServer.exe.config" />
@@ -209,6 +200,9 @@
       <Project>{2b9358c3-5098-4853-bdbc-24746912e2c4}</Project>
       <Name>WebApi</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\logs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
