@@ -119,10 +119,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Telerik.NetworkConnections.dll</HintPath>
     </Reference>
-    <Reference Include="WebApi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\WebApi.dll</HintPath>
-    </Reference>
     <Reference Include="WeChat.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\WeChat.Core.dll</HintPath>
@@ -207,6 +203,12 @@
     <Content Include="bin\Debug\WechatServer.exe" />
     <Content Include="bin\Debug\WechatServer.pdb" />
     <Content Include="bin\Debug\weixin.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WebApi\WebApi\WebApi.csproj">
+      <Project>{2b9358c3-5098-4853-bdbc-24746912e2c4}</Project>
+      <Name>WebApi</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

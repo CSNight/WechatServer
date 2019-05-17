@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{2B9358C3-5098-4853-BDBC-24746912E2C4}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>8.0</LangVersion>
+    <AssemblyName>WebApi</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <LangVersion>7.2</LangVersion>
+    <DefineConstants>
+    </DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Http">
+      <HintPath>E:\VS_Project_Workspace\WechatServer\WechatServer\bin\Debug\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>E:\VS_Project_Workspace\WechatServer\WechatServer\bin\Debug\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>E:\VS_Project_Workspace\WechatServer\WechatServer\bin\Debug\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>E:\VS_Project_Workspace\WechatServer\WechatServer\bin\Debug\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Swashbuckle.Core">
+      <HintPath>E:\VS_Project_Workspace\WechatServer\WechatServer\bin\Debug\Swashbuckle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Fleck">
+      <HintPath>E:\VS_Project_Workspace\WechatServer\WechatServer\bin\Debug\Fleck.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="WeChat.Core">
+      <HintPath>E:\VS_Project_Workspace\WechatServer\WechatServer\bin\Debug\WeChat.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Management\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>E:\VS_Project_Workspace\WechatServer\WechatServer\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors">
+      <HintPath>E:\VS_Project_Workspace\WechatServer\WechatServer\bin\Debug\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin">
+      <HintPath>E:\VS_Project_Workspace\WechatServer\WechatServer\bin\Debug\System.Web.Http.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebApi.Controllers\AutoLoginController.cs" />
+    <Compile Include="WebApi.Controllers\ContactController.cs" />
+    <Compile Include="WebApi.Controllers\FansController.cs" />
+    <Compile Include="WebApi.Controllers\FavController.cs" />
+    <Compile Include="WebApi.Controllers\GhController.cs" />
+    <Compile Include="WebApi.Controllers\GroupController.cs" />
+    <Compile Include="WebApi.Controllers\LabelController.cs" />
+    <Compile Include="WebApi.Controllers\MsgController.cs" />
+    <Compile Include="WebApi.Controllers\ReadPackController.cs" />
+    <Compile Include="WebApi.Controllers\SnsController.cs" />
+    <Compile Include="WebApi.Controllers\SystemController.cs" />
+    <Compile Include="WebApi.Controllers\TestController.cs" />
+    <Compile Include="WebApi.Controllers\UserController.cs" />
+    <Compile Include="WebApi.Model\AgreeDuty.cs" />
+    <Compile Include="WebApi.Model\ApiServerMsg.cs" />
+    <Compile Include="WebApi.Model\AtomicFunc.cs" />
+    <Compile Include="WebApi.Model\BackWxMsg.cs" />
+    <Compile Include="WebApi.Model\BankerConfig.cs" />
+    <Compile Include="WebApi.Model\BaseModel.cs" />
+    <Compile Include="WebApi.Model\ChMsg.cs" />
+    <Compile Include="WebApi.Model\Contact.cs" />
+    <Compile Include="WebApi.Model\ContactAcceptModel.cs" />
+    <Compile Include="WebApi.Model\ContactModel.cs" />
+    <Compile Include="WebApi.Model\ContactRemarkModel.cs" />
+    <Compile Include="WebApi.Model\CS.cs" />
+    <Compile Include="WebApi.Model\DeviceKeyModel.cs" />
+    <Compile Include="WebApi.Model\DicSocket.cs" />
+    <Compile Include="WebApi.Model\EnterGroupJson.cs" />
+    <Compile Include="WebApi.Model\FansAddModel.cs" />
+    <Compile Include="WebApi.Model\FansGetNearModel.cs" />
+    <Compile Include="WebApi.Model\FansSayHelloModel.cs" />
+    <Compile Include="WebApi.Model\FansSearchModel.cs" />
+    <Compile Include="WebApi.Model\FavAddModel.cs" />
+    <Compile Include="WebApi.Model\FavModel.cs" />
+    <Compile Include="WebApi.Model\FavSelectModel.cs" />
+    <Compile Include="WebApi.Model\GhModel.cs" />
+    <Compile Include="WebApi.Model\GhRequestTokenModel.cs" />
+    <Compile Include="WebApi.Model\GhRequestUrl.cs" />
+    <Compile Include="WebApi.Model\GhSearchModel.cs" />
+    <Compile Include="WebApi.Model\GhSubscriptionCommandModel.cs" />
+    <Compile Include="WebApi.Model\GroupAnnouncementModel.cs" />
+    <Compile Include="WebApi.Model\GroupCreatModel.cs" />
+    <Compile Include="WebApi.Model\GroupMember.cs" />
+    <Compile Include="WebApi.Model\GroupModel.cs" />
+    <Compile Include="WebApi.Model\GroupNameModel.cs" />
+    <Compile Include="WebApi.Model\GroupUserModel.cs" />
+    <Compile Include="WebApi.Model\IntoGroupModel.cs" />
+    <Compile Include="WebApi.Model\LabelAddModel.cs" />
+    <Compile Include="WebApi.Model\LabelModel.cs" />
+    <Compile Include="WebApi.Model\LabelSetModel.cs" />
+    <Compile Include="WebApi.Model\Member.cs" />
+    <Compile Include="WebApi.Model\MessageModel.cs" />
+    <Compile Include="WebApi.Model\Msg.cs" />
+    <Compile Include="WebApi.Model\MsgContent.cs" />
+    <Compile Include="WebApi.Model\MySocket.cs" />
+    <Compile Include="WebApi.Model\OnlineWxModel.cs" />
+    <Compile Include="WebApi.Model\OperationTail.cs" />
+    <Compile Include="WebApi.Model\packitme.cs" />
+    <Compile Include="WebApi.Model\PackMsg.cs" />
+    <Compile Include="WebApi.Model\PackTime.cs" />
+    <Compile Include="WebApi.Model\QrCodeJson.cs" />
+    <Compile Include="WebApi.Model\ReadPackItem.cs" />
+    <Compile Include="WebApi.Model\ReadPackJson.cs" />
+    <Compile Include="WebApi.Model\RedPacketJson.cs" />
+    <Compile Include="WebApi.Model\RequestViewModelBase.cs" />
+    <Compile Include="WebApi.Model\ScanLoginModel.cs" />
+    <Compile Include="WebApi.Model\SendAppModel.cs" />
+    <Compile Include="WebApi.Model\SendMassModel.cs" />
+    <Compile Include="WebApi.Model\SendMediaModel.cs" />
+    <Compile Include="WebApi.Model\SendTextModel.cs" />
+    <Compile Include="WebApi.Model\ShardCardModel.cs" />
+    <Compile Include="WebApi.Model\SnsComment.cs" />
+    <Compile Include="WebApi.Model\SnsModel.cs" />
+    <Compile Include="WebApi.Model\SnsSendImageTextModel.cs" />
+    <Compile Include="WebApi.Model\SnsSendLink.cs" />
+    <Compile Include="WebApi.Model\SnsSendTextModel.cs" />
+    <Compile Include="WebApi.Model\SnsSyncModel.cs" />
+    <Compile Include="WebApi.Model\SnsUpload.cs" />
+    <Compile Include="WebApi.Model\SnsUserModel.cs" />
+    <Compile Include="WebApi.Model\SocketModel.cs" />
+    <Compile Include="WebApi.Model\TcpMsg.cs" />
+    <Compile Include="WebApi.Model\UserData.cs" />
+    <Compile Include="WebApi.Model\UserLoginModel.cs" />
+    <Compile Include="WebApi.Model\UserSetHeadImg.cs" />
+    <Compile Include="WebApi.Model\UserSetUserInfoModel.cs" />
+    <Compile Include="WebApi.Model\UserSetWxidModel.cs" />
+    <Compile Include="WebApi.Model\WxDat.cs" />
+    <Compile Include="WebApi.Model\WxGroup.cs" />
+    <Compile Include="WebApi.Model\WxMember.cs" />
+    <Compile Include="WebApi.Model\WxQrCode.cs" />
+    <Compile Include="WebApi.Model\WXReceiveRedPacketJson.cs" />
+    <Compile Include="WebApi.Model\WxToken.cs" />
+    <Compile Include="WebApi.Model\WxTtsMsg.cs" />
+    <Compile Include="WebApi.Model\WxUser.cs" />
+    <Compile Include="WebApi.MyWebSocket\XzyWebSocket.cs" />
+    <Compile Include="WebApi.Utils\ApiClient.cs" />
+    <Compile Include="WebApi.Utils\Auth.cs" />
+    <Compile Include="WebApi.Utils\BaseClass.cs" />
+    <Compile Include="WebApi.Utils\ConvertUtils.cs" />
+    <Compile Include="WebApi.Utils\ffmpegUtils.cs" />
+    <Compile Include="WebApi.Utils\FingerPrint.cs" />
+    <Compile Include="WebApi.Utils\HttpUtil.cs" />
+    <Compile Include="WebApi.Utils\Http_Helper.cs" />
+    <Compile Include="WebApi.Utils\MyUtils.cs" />
+    <Compile Include="WebApi.Utils\Utilities.cs" />
+    <Compile Include="WebApi.Util\Convert62.cs" />
+    <Compile Include="WebApi.WeChat\XzyWeChatThread.cs" />
+    <Compile Include="WebApi\App.cs" />
+    <Compile Include="WebApi\ErrorAttribute.cs" />
+    <Compile Include="WebApi\LogServer.cs" />
+    <Compile Include="WebApi\Startup.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
