@@ -196,13 +196,13 @@
     <Content Include="bin\Debug\weixin.dll" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\WebApi\WebApi\WebApi.csproj">
+    <Folder Include="bin\Debug\logs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebApi\WebApi.csproj">
       <Project>{2b9358c3-5098-4853-bdbc-24746912e2c4}</Project>
       <Name>WebApi</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Debug\logs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
